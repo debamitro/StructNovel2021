@@ -35,8 +35,9 @@ fn generate_chapter_from_header_file(chapter_num: i32, pathstr: &str) {
                 } else {
                     print!(", and");
                 }
-                println!(" a {} called {}", &cfield.typename, &cfield.name);
+                print!(" a {} called {}", &cfield.typename, &cfield.name);
             }
+            println!(".\n");
             foundsomestructs = true;
         }
 
